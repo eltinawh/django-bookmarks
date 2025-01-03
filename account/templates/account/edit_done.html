@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile updated{% endblock %}
+
+{% block content %}
+  <h1>Hi {{ request.user.first_name }}!</h1>
+  <p>
+    Your account has been successfully updated. Now, you can visit your <a href="{% url 'dashboard' %}">dashboard</a>.
+  </p>
+  {% endblock %}
